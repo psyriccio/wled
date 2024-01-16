@@ -86,6 +86,16 @@ static const char _data_FX_MODE_STATIC[] PROGMEM = "Solid";
 
 
 /*
+ * Test custom fx by Psyriccio
+ */
+uint16_t mode_test(void) {
+  SEGMENT.fill(SEGCOLOR(0));
+  return strip.isOffRefreshRequired() ? FRAMETIME : 350;
+}
+static const char _data_FX_MODE_TEST[] PROGMEM = "Test";
+
+
+/*
  * Blink/strobe function
  * Alternate between color1 and color2
  * if(strobe == true) then create a strobe effect
@@ -7899,5 +7909,7 @@ void WS2812FX::setupEffectData() {
 
   addEffect(FX_MODE_2DAKEMI, &mode_2DAkemi, _data_FX_MODE_2DAKEMI); // audio
 #endif // WLED_DISABLE_2D
+
+  addEffect(FX_MODE_TEST, &mode_test, _data_FX_MODE_TEST);
 
 }
