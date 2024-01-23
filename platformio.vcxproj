@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Path>/home/psyriccio/.platformio/penv/bin:/home/psyriccio/perl5/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/opt/flutter/bin:/home/psyriccio/.antigen/bundles/robbyrussell/oh-my-zsh/lib:/home/psyriccio/.zsh-custom:/home/psyriccio/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/git:/home/psyriccio/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/command-not-found:/home/psyriccio/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/archlinux:/home/psyriccio/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/adb:/home/psyriccio/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/colorize:/home/psyriccio/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/common-aliases:/home/psyriccio/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/compleat:/home/psyriccio/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/copydir:/home/psyriccio/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/copyfile:/home/psyriccio/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/cp:/home/psyriccio/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/man:/home/psyriccio/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/sudo:/home/psyriccio/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/git-prompt:/home/psyriccio/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/gnu-utils:/home/psyriccio/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/gradle:/home/psyriccio/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/mvn:/home/psyriccio/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/postgres:/home/psyriccio/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/rsync:/home/psyriccio/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/systemadmin:/home/psyriccio/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/taskwarrior:/home/psyriccio/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/zsh-navigation-tools:/home/psyriccio/.antigen/bundles/zsh-users/zsh-syntax-highlighting:/home/psyriccio/.antigen/bundles/zsh-users/zsh-history-substring-search:/home/psyriccio/.antigen/bundles/zsh-users/zsh-completions:/home/psyriccio/.antigen/bundles/zsh-users/zsh-autosuggestions:/home/psyriccio/.antigen/bundles/zsh-users/zaw:/home/psyriccio/.antigen/bundles/zsh-users/zaw/functions:/home/psyriccio/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/perms</Path>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0FA9C3A8-452B-41EF-A418-9102B170F49F}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeBuildCommandLine>platformio -f -c visualstudio run</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>platformio -f -c visualstudio run --target clean</NMakeCleanCommandLine>
+    <NMakePreprocessorDefinitions>PLATFORMIO=60113;ESP8266;ARDUINO_ARCH_ESP8266;ARDUINO_ESP8266_NODEMCU_ESP12E;MQTT_MAX_PACKET_SIZE=1024;SECURE_CLIENT=SECURE_CLIENT_BEARSSL;BEARSSL_SSL_BASIC;CORE_DEBUG_LEVEL=0;NDEBUG;_IR_ENABLE_DEFAULT_=false;DECODE_HASH=true;DECODE_NEC=true;DECODE_SONY=true;DECODE_SAMSUNG=true;DECODE_LG=true;WLED_USE_MY_CONFIG;ESP8266;FP_IN_IROM;PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK22x_190703;PIO_FRAMEWORK_ARDUINO_LWIP_HIGHER_BANDWIDTH;VTABLES_IN_FLASH;MIMETYPE_MINIMAL;PIO_FRAMEWORK_ARDUINO_MMU_CACHE16_IRAM48;WLED_RELEASE_NAME=ESP8266;WLED_VERSION=0.14.1;F_CPU=80000000L;__ets__;ICACHE_FLASH;_GNU_SOURCE;ARDUINO=10805;ARDUINO_BOARD="PLATFORMIO_NODEMCUV2";ARDUINO_BOARD_ID="nodemcuv2";FLASHMODE_DOUT;LWIP_OPEN_SRC;NONOSDK22x_190703=1;TCP_MSS=536;LWIP_FEATURES=1;LWIP_IPV6=0;MMU_IRAM_SIZE=0xC000;MMU_ICACHE_SIZE=0x4000</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>$(HOMEDRIVE)$(HOMEPATH)/prj/WLED/include;$(HOMEDRIVE)$(HOMEPATH)/prj/WLED/wled00;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WebServer/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/DNSServer/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ArduinoOTA;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266mDNS/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/EEPROM;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/SD/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/SDFS/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266SdFat/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/Wire;$(HOMEDRIVE)$(HOMEPATH)/prj/WLED/.pio/libdeps/nodemcuv2/ESPAsyncWebServerAircoookie/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/LittleFS/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WiFi/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/Hash/src;$(HOMEDRIVE)$(HOMEPATH)/prj/WLED/.pio/libdeps/nodemcuv2/NeoPixelBus/src;$(HOMEDRIVE)$(HOMEPATH)/prj/WLED/.pio/libdeps/nodemcuv2/IRremoteESP8266/src;$(HOMEDRIVE)$(HOMEPATH)/prj/WLED/.pio/libdeps/nodemcuv2/FastLED/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/SPI;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/SoftwareSerial/src;$(HOMEDRIVE)$(HOMEPATH)/prj/WLED/.pio/libdeps/nodemcuv2/ESPAsyncUDP/src;$(HOMEDRIVE)$(HOMEPATH)/prj/WLED/.pio/libdeps/nodemcuv2/ESPAsyncTCP/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/tools/sdk/include;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/cores/esp8266;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/toolchain-xtensa/include;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/tools/sdk/lwip2/include;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/variants/nodemcu;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266AVRISP/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266HTTPClient/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266HTTPUpdateServer/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266LLMNR;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266NetBIOS;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266SSDP;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WiFiMesh/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266httpUpdate/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/Ethernet/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/FSTools;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/GDBStub/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/I2S/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/Netdump/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/SPISlave/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/Servo/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/TFT_Touch_Shield_V2;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/Ticker/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/esp8266/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/lwIP_Ethernet/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/lwIP_PPP/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/lwIP_enc28j60/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/lwIP_w5100/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/lwIP_w5500/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include/c++/10.3.0;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include/c++/10.3.0/xtensa-lx106-elf;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/toolchain-xtensa/lib/gcc/xtensa-lx106-elf/10.3.0/include-fixed;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/toolchain-xtensa/lib/gcc/xtensa-lx106-elf/10.3.0/include;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeBuildCommandLine>platformio run</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>platformio run --target clean</NMakeCleanCommandLine>
+    <NMakePreprocessorDefinitions>PLATFORMIO=60113;ESP8266;ARDUINO_ARCH_ESP8266;ARDUINO_ESP8266_NODEMCU_ESP12E;MQTT_MAX_PACKET_SIZE=1024;SECURE_CLIENT=SECURE_CLIENT_BEARSSL;BEARSSL_SSL_BASIC;CORE_DEBUG_LEVEL=0;NDEBUG;_IR_ENABLE_DEFAULT_=false;DECODE_HASH=true;DECODE_NEC=true;DECODE_SONY=true;DECODE_SAMSUNG=true;DECODE_LG=true;WLED_USE_MY_CONFIG;ESP8266;FP_IN_IROM;PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK22x_190703;PIO_FRAMEWORK_ARDUINO_LWIP_HIGHER_BANDWIDTH;VTABLES_IN_FLASH;MIMETYPE_MINIMAL;PIO_FRAMEWORK_ARDUINO_MMU_CACHE16_IRAM48;WLED_RELEASE_NAME=ESP8266;WLED_VERSION=0.14.1;F_CPU=80000000L;__ets__;ICACHE_FLASH;_GNU_SOURCE;ARDUINO=10805;ARDUINO_BOARD="PLATFORMIO_NODEMCUV2";ARDUINO_BOARD_ID="nodemcuv2";FLASHMODE_DOUT;LWIP_OPEN_SRC;NONOSDK22x_190703=1;TCP_MSS=536;LWIP_FEATURES=1;LWIP_IPV6=0;MMU_IRAM_SIZE=0xC000;MMU_ICACHE_SIZE=0x4000</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>$(HOMEDRIVE)$(HOMEPATH)/prj/WLED/include;$(HOMEDRIVE)$(HOMEPATH)/prj/WLED/wled00;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WebServer/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/DNSServer/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ArduinoOTA;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266mDNS/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/EEPROM;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/SD/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/SDFS/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266SdFat/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/Wire;$(HOMEDRIVE)$(HOMEPATH)/prj/WLED/.pio/libdeps/nodemcuv2/ESPAsyncWebServerAircoookie/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/LittleFS/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WiFi/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/Hash/src;$(HOMEDRIVE)$(HOMEPATH)/prj/WLED/.pio/libdeps/nodemcuv2/NeoPixelBus/src;$(HOMEDRIVE)$(HOMEPATH)/prj/WLED/.pio/libdeps/nodemcuv2/IRremoteESP8266/src;$(HOMEDRIVE)$(HOMEPATH)/prj/WLED/.pio/libdeps/nodemcuv2/FastLED/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/SPI;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/SoftwareSerial/src;$(HOMEDRIVE)$(HOMEPATH)/prj/WLED/.pio/libdeps/nodemcuv2/ESPAsyncUDP/src;$(HOMEDRIVE)$(HOMEPATH)/prj/WLED/.pio/libdeps/nodemcuv2/ESPAsyncTCP/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/tools/sdk/include;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/cores/esp8266;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/toolchain-xtensa/include;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/tools/sdk/lwip2/include;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/variants/nodemcu;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266AVRISP/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266HTTPClient/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266HTTPUpdateServer/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266LLMNR;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266NetBIOS;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266SSDP;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WiFiMesh/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266httpUpdate/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/Ethernet/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/FSTools;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/GDBStub/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/I2S/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/Netdump/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/SPISlave/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/Servo/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/TFT_Touch_Shield_V2;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/Ticker/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/esp8266/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/lwIP_Ethernet/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/lwIP_PPP/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/lwIP_enc28j60/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/lwIP_w5100/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/framework-arduinoespressif8266/libraries/lwIP_w5500/src;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include/c++/10.3.0;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include/c++/10.3.0/xtensa-lx106-elf;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/toolchain-xtensa/lib/gcc/xtensa-lx106-elf/10.3.0/include-fixed;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/toolchain-xtensa/lib/gcc/xtensa-lx106-elf/10.3.0/include;$(HOMEDRIVE)$(HOMEPATH)/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <None Include="platformio.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/um_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/mqtt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/ir_codes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/wled00.ino">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/playlist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/my_config_sample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/overlay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/lx_parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/cfg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/bus_wrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/set.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/html_settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/NodeStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/wled_server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/ws.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/FX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/wled_ethernet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/wled.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/json.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/bus_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/e131.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/html_other.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/net_debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/FX_fcn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/FX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/improv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/const.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/hue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/presets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/dmx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/alexa.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/FX_2Dfcn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/fcn_declare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/usermod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/led.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/bus_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/pin_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/colors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/palettes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/remote.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/wled.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/network.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/file.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/wled_math.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/html_pxmagic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/my_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/ir.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/xml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/html_cpal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/html_ui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/html_simple.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/usermod_v2_empty.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/udp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/wled_eeprom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/usermods_list.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/wled_serial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/html_pixart.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/net_debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/ntp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/pin_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/font/console_font_5x8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/font/console_font_7x9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/font/console_font_5x12.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/font/console_font_4x6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/font/console_font_6x8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/timezone/LICENSE.md">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/timezone/Timezone.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/timezone/Timezone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/timezone/ReadMe.md">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/network/Network.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/network/Network.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/time/DS1307RTC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/time/LICENSE.txt">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/time/Readme.txt">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/time/TimeLib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/time/DS1307RTC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/time/DateStrings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/time/Time.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/time/library.json">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/time/library.properties">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/dmx/SparkFunDMX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/dmx/LICENSE.md">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/dmx/SparkFunDMX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/dmx/ESPDMX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/dmx/ESPDMX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/e131/ESPAsyncE131.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/e131/ESPAsyncE131.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/json/ArduinoJson-v6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/json/AsyncJson-v6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/ws2812fx/LICENSE.txt">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/ws2812fx/readme.txt">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/toki/Toki.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/async-mqtt-client/README.md">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/async-mqtt-client/LICENSE">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/Storage.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/MessageProperties.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/ParsingInformation.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/Helpers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/DisconnectReasons.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/Callbacks.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/Flags.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/Packets/PubRelPacket.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/Packets/PubRecPacket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/Packets/PublishPacket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/Packets/PubCompPacket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/Packets/UnsubAckPacket.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/Packets/PubRelPacket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/Packets/Packet.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/Packets/UnsubAckPacket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/Packets/PubRecPacket.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/Packets/PubCompPacket.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/Packets/PubAckPacket.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/Packets/PingRespPacket.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/Packets/PublishPacket.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/Packets/SubAckPacket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/Packets/ConnAckPacket.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/Packets/SubAckPacket.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/Packets/PingRespPacket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/Packets/PubAckPacket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/async-mqtt-client/AsyncMqttClient/Packets/ConnAckPacket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/espalexa/EspalexaDevice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wled00/src/dependencies/espalexa/Espalexa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/espalexa/LICENSE">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/src/dependencies/espalexa/EspalexaDevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/404.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/index.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/settings.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/settings_leds.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/simple.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/index.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/simple.css">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/style.css">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/simple.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/dmxmap.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/settings_pin.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/update.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/liveview.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/msg.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/index.css">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/iro.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/settings_2D.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/settings_um.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/rangetouch.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/settings_sync.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/welcome.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/settings_wifi.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/settings_dmx.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/liveviewws2D.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/settings_time.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/settings_ui.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/usermod.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/favicon.ico">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/settings_sec.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/edit.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/pixart/statics.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/pixart/getPixelValues.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/pixart/pixart.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/pixart/site.webmanifest">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/pixart/pixart.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/pixart/pixart.css">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/pixart/favicon-32x32.png">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/pixart/boxdraw.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/pixart/favicon-16x16.png">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/pixart/favicon.ico">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/icons-ui/style.css">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/icons-ui/selection.json">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/icons-ui/Read Me.txt">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/icons-ui/demo.html">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/icons-ui/demo-files/demo.css">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/icons-ui/demo-files/demo.js">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/icons-ui/fonts/wled122.woff2">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/icons-ui/fonts/wled122.woff">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/cpal/cpal.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wled00/data/pxmagic/pxmagic.htm">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
